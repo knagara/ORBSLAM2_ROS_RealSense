@@ -1,0 +1,13 @@
+<launch>
+
+ <!-- RealSense -->
+ <include file="$(find orbslam2_ros_realsense)/launch/realsense/rs_camera.launch" />
+
+ <!-- ORBSLAM2 -->
+ <node pkg="ORB_SLAM2" type="RGBD" name="orbslam2"
+       args="$(find orbslam2_ros_realsense)/config/vocabulary/ORBvoc.dat $(find orbslam2_ros_realsense)/config/parameter/parameter.yaml">
+    <remap from="/camera/rgb/image_raw" to="/camera/color/image_raw" />
+    <remap from="/camera/depth_registered/image_raw" to="/camera/depth/image_rect_raw" />
+  </node>
+
+</launch>
