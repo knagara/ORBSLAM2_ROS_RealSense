@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find orbslam2_ros_realsense)/launch/robot/robot.launch" />
+  <include file="$(find orbslam2_ros_realsense)/launch/rgbd.launch" />
+</launch>

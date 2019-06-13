@@ -1,0 +1,45 @@
+         VERSION       4.00000000
+
+            VOLT      24.00000000
+           CYCLE       0.00100000
+   CONTROL_CYCLE       0.01000000
+ TORQUE_FINENESS       0.00000010
+
+       RADIUS[0]       0.05750000
+       RADIUS[1]      -0.05750000
+           TREAD       0.29783000
+            MASS      15.00000000
+  TIRE_M_INERTIA       0.00700000
+  MOMENT_INERTIA       0.16700000
+   TORQUE_VISCOS       0.00004000
+   TORQUE_NEWTON       0.00500000
+      TORQUE_MAX       0.30000000
+    TORQUE_LIMIT       0.30000000
+
+     MOTOR_PHASE       0.00000000 # DC
+       COUNT_REV    4000.00000000
+            GEAR      17.14285700 # モータ軸14:60, 15:60タイヤ軸
+        MOTOR_VC     200.00000000
+        MOTOR_TC       0.04690000
+         MOTOR_R       3.80000000 # [omh]
+ MOTOR_M_INERTIA       0.00000000
+         GAIN_KP      20.00000000
+         GAIN_KI     300.00000000
+    INTEGRAL_MAX       0.10000000 # [rev]
+      
+         MAX_VEL       1.50000000
+           MAX_W       6.28000000
+       MAX_ACC_V       3.00000000
+       MAX_ACC_W      12.56000000
+  MAX_CENTRI_ACC       2.45000000 #0.25G
+
+            L_C1       0.01000000
+            L_K1     800.00000000
+            L_K2     300.00000000
+            L_K3     200.00000000
+          L_DIST       0.40000000
+
+     STOP_LINEAR       0.01000000
+     SPIN_LINEAR       0.05000000
+WHEEL_ANG_LINEAR       0.05000000
+

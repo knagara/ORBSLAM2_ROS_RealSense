@@ -1,0 +1,11 @@
+ <launch>	
+	<arg name="port_robot" default="/dev/serial/by-id/usb-T-frog_project_T-frog_Driver-if00" />
+	<arg name="robot_param" default="$(find orbslam2_ros_realsense)/config/M1.param" />
+	<node pkg="ypspur_ros" type="ypspur_ros" name="ypspur_ros" respawn="true">
+		<param name="port" value="$(arg port_robot)" />
+		<param name="param_file" value="$(arg robot_param)" />
+		<param name="compatible" value="1" />
+	</node>
+
+	<node pkg="joystick_commander" type="joystick_commander" name="joystick_commander" args="/dev/input/js0" respawn="true" />
+</launch>
