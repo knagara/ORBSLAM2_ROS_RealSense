@@ -3,10 +3,7 @@
  <!-- RealSense -->
  <include file="$(find orbslam2_ros_realsense)/launch/realsense/rs_camera.launch" />
 
- <!-- ORBSLAM2 -->
- <node pkg="ORB_SLAM2" type="Mono" name="orbslam2"
-       args="$(find orbslam2_ros_realsense)/config/vocabulary/ORBvoc.dat $(find orbslam2_ros_realsense)/config/parameter/parameter.yaml">
-    <remap from="/camera/image_raw" to="/camera/color/image_raw" />
-  </node>
+ <!-- orb_slam2_ros -->
+ <include file="$(find orb_slam2_ros)/ros/launch/orb_slam2_d435_mono.launch" />
 
 </launch>
