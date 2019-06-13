@@ -5,7 +5,7 @@
 
  <!-- ORBSLAM2 -->
  <node pkg="ORB_SLAM2" type="Mono" name="orbslam2"
-       args="$(find orbslam2_ros_realsense)/config/vocabulary/ORBvoc.dat $(find orbslam2_ros_realsense)/config/parameter/TUM1.yaml">
+       args="$(find orbslam2_ros_realsense)/config/vocabulary/ORBvoc.dat $(find orbslam2_ros_realsense)/config/parameter/parameter.yaml">
     <remap from="/camera/image_raw" to="/camera/color/image_raw" />
   </node>
 
